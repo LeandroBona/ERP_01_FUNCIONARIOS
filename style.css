@@ -1,0 +1,191 @@
+@keyframes pisca {
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.urna {
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+}
+
+.tela {
+    width: 700px;
+    /* ajustei a largura para comportar a divisão */
+    height: 400px;
+    /* ajustei a altura para comportar a divisão */
+    border: 2px solid #999999;
+    display: flex;
+    flex-direction: column;
+    /* alterei para coluna */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-voto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+    margin-top: 3px;
+    height: 94%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-voto {
+    width: 50%;
+    /* largura ajustada para a divisão */
+    padding: 10px;
+}
+
+.info-voto-titulo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-voto-cargo {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.info-voto-numeros {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.info-voto-detalhes {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.info-imagem {
+    width: 50%;
+    /* largura ajustada para a divisão */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.info-imagem-prefeito,
+.info-imagem-vice {
+    margin: 5px 0;
+}
+
+.imagem-candidato {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.instrucoes {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.teclado {
+    background-color: #e0e0e0;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclado--linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclado--botao {
+    width: 70px;
+    height: 40px;
+    background-color: #999999;
+    color: #ffffff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.botao--branco {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+}
+
+.botao--corrige,
+.botao--confirma {
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.botao--corrige {
+    background-color: #f0ad4e;
+}
+
+.botao--confirma {
+    background-color: #5cb85c;
+}
+
+.numero {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #999999;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    background-color: #ffffff;
+    margin: 5px;
+}
+
+.pisca {
+    animation: pisca 1s infinite;
+}
+
+.aviso--grande,
+.aviso--gigante {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aviso--grande {
+    font-size: 40px;
+    color: #d9534f;
+}
+
+.aviso--gigante {
+    font-size: 70px;
+    color: #d9534f;
+}
